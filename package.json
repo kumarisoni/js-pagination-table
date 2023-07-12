@@ -1,0 +1,33 @@
+{
+  "name": "js-pagination-table",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "This project helps to render table with pagination.",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "keywords": [
+    "javscript table",
+    "pagination",
+    "pagination table",
+    "js table",
+    "js pagination"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kumarisoni/js-pagination-table.git"
+  },
+  "author": "kumari soni",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kumarisoni/js-pagination-table/issues"
+  },
+  "homepage": "https://github.com/kumarisoni/js-pagination-table#readme",
+  "dependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

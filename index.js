@@ -1,5 +1,3 @@
-import {pagination} from './src/Pagination.js';
+import {Pagination} from './src/Pagination.js';
 
-export const getPaginatedTable = function(options) {
-    return pagination(options);
-}
+export default Pagination;

@@ -1,32 +1,9 @@
-
-// export const getPaginatedTable = function(options) {
-//     let configArray = options;
-//     let startColor,endColor, range, steps;
-//     let colorMatrix = [];
-//     let currentColorMatrix = [];
-//     for(let i =0; i < configArray.length; i++) {
-//         currentColorMatrix = [];
-//         if(configArray[i].style === 'gradient') {
-//             startColor = configArray[i].fromColor;
-//             endColor = configArray[i].toColor;
-//         } else {
-//             startColor = configArray[i].color;
-//             endColor = configArray[i].color;
-//         }
-//             range = (configArray[i].range).split("-");
-//             steps =  (parseInt(range[1]) - parseInt(range[0]))+1;
-//             currentColorMatrix = getGradientColor(startColor, endColor, steps);
-//             colorMatrix = colorMatrix.concat(currentColorMatrix);
-//     }
-//     return colorMatrix;
-// }
-
 import { React, useEffect, useState } from 'react';
 require('./Pagination.css');
 
-export const getPaginatedTable = (options) => {
-    const currentPageSize = options.currentPageSize || 5;
-    const paginationPages = options.totalRows.length / currentPageSize;
+export const pagination = (props) => {
+    const currentPageSize = props.currentPageSize || 5;
+    const paginationPages = props.totalRows.length / currentPageSize;
     const [paginationPageList, setPaginationPageList] = useState([]);
     const [paginatedRows, setPaginatedRows] = useState([]);
     const [startIndex, setStartIndex] = useState(0);
@@ -56,7 +33,7 @@ export const getPaginatedTable = (options) => {
             setCurrentPage(selectedIndex+1);
         }
         endIndex = endIndex || (startIndex + currentPageSize);
-        let selectedRows = options.totalRows.slice(startIndex, endIndex);
+        let selectedRows = props.totalRows.slice(startIndex, endIndex);
         setPaginatedRows(selectedRows);
     };
 

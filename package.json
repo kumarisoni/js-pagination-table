@@ -1,7 +1,7 @@
 {
   "name": "js-pagination-table",
   "type": "module",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "This project helps to render table with pagination.",
   "main": "index.js",
   "directories": {

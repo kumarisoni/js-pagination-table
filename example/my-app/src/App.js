@@ -1,7 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-// import Pagination from 'js-pagination-table'
-import Pagination from 'pagination-table';
+import Pagination from 'js-pagination-table'
 
 function App() {
   return (

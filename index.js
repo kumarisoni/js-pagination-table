@@ -1,3 +1,6 @@
-import {Pagination} from './src/Pagination.jsx';
+// import {Pagination} from './src/Pagination.jsx';
 
-export default Pagination;
+// export default Pagination;
+import {Pagination} from './src/Pagination.js';
+
+export { Pagination }
